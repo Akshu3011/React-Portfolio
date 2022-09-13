@@ -1,5 +1,5 @@
     import React from 'react'
-    import './Experience.css'
+    import "./Experience.css"
     import PropTypes from 'prop-types';
     import Tabs from '@mui/material/Tabs';
     import Tab from '@mui/material/Tab';
@@ -76,6 +76,8 @@
         <TabPanel value={value} index={0}>
         <h4>University of Washington, USA | Jun 2022-Sept 2022</h4>
         <h4>Full Stack Developement Bootcamp</h4>
+        <p>Curriculum included HTML5, CSS3, JavaScript, Bootstap, Express.js, react.js, JQuery, MongoDB,Node.js,MySQL, Command Line, Git and more.</p>
+        <p>Built complex projects and learned to collaborate with project team</p>
 
         </TabPanel>
         <TabPanel value={value} index={1}>

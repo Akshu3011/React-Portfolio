@@ -18,10 +18,13 @@ const Footer = () => {
                     <li className='nav-item'>
                         <a href='#experience'>Experience</a>
                     </li>
+                    <li className='nav-item'>
+                        <a href='/'>Contact</a>
+                    </li>
                 </ul>
                 <div className='bottom'>
                     <span className='line'></span>
-                    <p>2020 Execute, Inc. All rights reserved</p>
+                    <p>2022 </p>
                 </div>
             </div>
         </div>
