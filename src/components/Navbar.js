@@ -1,25 +1,48 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import logo from './images/logo.png'
 
-export default function CenteredTabs() {
-  const [value, setValue] = React.useState(0);
+import './Navbar.css'
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+const Navbar = () => {
 
-  return (
-    <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
-      <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="Experience" />
-        <Tab label="AboutMe" />
-        <Tab label="GitHub" />
-        <Tab label="LinkedIn" /> 
-        <Tab label="Resume" />
-        <Tab label="Contact" />
-      </Tabs>
-    </Box>
-  );
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    const closeMenu = () => setClick(false)
+
+    return (
+        <div className='header'>
+            <nav className='navbar'>
+                <a href='/' className='logo'>
+                    <img src={logo} alt='logo' />
+                </a>
+                <div className='hamburger' onClick={handleClick}>
+                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+
+                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className='nav-item'>
+                        <a href='/' onClick={closeMenu}>Home</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#about' onClick={closeMenu}>About</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#testimonials' onClick={closeMenu}>Projects</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#testimonials' onClick={closeMenu}>Experience</a>
+                    </li>
+                   
+                    <li className='nav-item'>
+                        <a href='#demo' onClick={closeMenu}>Demo</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    )
 }
+
+export default Navbar

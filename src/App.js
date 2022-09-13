@@ -1,23 +1,22 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import AboutMe from './pages/AboutMe'
-import Contact from './pages/Contact'
-import Experience from './pages/Experience'
-import Resume from './pages/Resume'
-import Home from './pages/Home'
-import Navbar from "./components/Navbar";
+import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Experience from './components/Experience'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 function App() {
-return (
-<div>
-  <Navbar />
-  <Home />
-  <Experience />
-  <AboutMe />
-  <Contact />
-</div>
-)}
-
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Experience />
+      <Footer />
+    </div>
+  );
+}
 
 export default App;
-
