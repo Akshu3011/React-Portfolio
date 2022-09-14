@@ -43,7 +43,7 @@ const Footer = () => {
                 <Link href="#" onClick = {() => openInNewTab("https://www.linkedin.com/in/akshata-kumbhar/")}>
                 <h1><LinkedInIcon/></h1>
                 </Link>
-                <Link href="#" onClick = {() => openInNewTab("https://github.com/Akshu3011")}>
+                <Link href="" onClick = {() => openInNewTab("https://github.com/Akshu3011")}>
                 <h1><EmailIcon/></h1>
                 </Link>
                 </Stack>

@@ -1,0 +1,33 @@
+h3 {
+	width: 100%;
+	margin-bottom: 4px;
+	padding: 4px;
+}
+
+
+.contact {
+    width: 100%;
+}
+
+.contact .container {
+    width: 1240px;
+    margin: 4rem auto;
+    padding: 4rem 0rem;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact .container .content {
+   margin-top: 150px;
+    flex-grow: 1;
+}
+
+
+.cardAction {
+	display: flex;
+	justify-content: flex-end;
+}
+
