@@ -3,16 +3,25 @@ import './Footer.css'
 import {Link} from 'react-scroll'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
 import Stack from '@mui/material/Stack';
-
+import DescriptionIcon from '@mui/icons-material/Description';
+import { saveAs } from "file-saver";
 
 export const openInNewTab = (url) => {
+
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (newWindow) newWindow.opener = null;
   };
 
 const Footer = () => {
+    const saveFile = () => {
+        saveAs(
+          "https://drive.google.com/file/d/1mJEaszq3-nD2KY6_6Jmf5yt8YyeNdaVJ/view?usp=sharing",
+          "Akshata Kumbhar_Resume.pdf"
+        );
+      };
+
+
     return (
         <div className='footer'>
             <div className='container'>
@@ -43,8 +52,8 @@ const Footer = () => {
                 <Link href="#" onClick = {() => openInNewTab("https://www.linkedin.com/in/akshata-kumbhar/")}>
                 <h1><LinkedInIcon/></h1>
                 </Link>
-                <Link href="" onClick = {() => openInNewTab("https://github.com/Akshu3011")}>
-                <h1><EmailIcon/></h1>
+                <Link href="" onClick={saveFile}>
+                <h1><DescriptionIcon/></h1>
                 </Link>
                 </Stack>
                     <span className='line'></span>

@@ -39,8 +39,9 @@ const Navbar = () => {
                     </li>
                    
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Contact</a>
+                    <Link  to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact</Link>
                     </li>
+                 
                 </ul>
             </nav>
         </div>
