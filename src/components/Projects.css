@@ -25,12 +25,22 @@ box-shadow: 5px 10px 15px 20px rgba(0,0,0,0.253)!important;
 }
 
 .card-body{
-    padding: 3rem 0 !important
+    padding: 3rem 0 !important;
+    background-color: antiquewhite;
+    
+    
 }
 
 .card-text{
     font-size:9rem;
     padding: 0.4rem 1.9rem;
+}
+.card{
+    overflow: hidden;
+    background-color: antiquewhite !important;
+}
+.card-img{
+    padding: 1rem;
 }
 
 @media screen and (max-width: 940px) {

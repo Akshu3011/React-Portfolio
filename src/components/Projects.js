@@ -23,8 +23,9 @@ const Projects = () => {
               <CardMedia
                 component="img"
                 alt="Curate"
-                height="200"
+                height="240"
                 image={curate}
+                className='card-img'
               />
               <CardContent className="card-body">
                 <Typography gutterBottom variant="h5" component="div" align="center">
@@ -50,8 +51,10 @@ const Projects = () => {
               <CardMedia
                 component="img"
                 alt="green iguana"
-                height="200"
+                height="240"
                 image={sarapp}
+                className='card-img'
+
               />
               <CardContent className="card-body">
                 <Typography gutterBottom variant="h5" component="div" align="center">
@@ -77,8 +80,10 @@ const Projects = () => {
               <CardMedia
                 component="img"
                 alt="green iguana"
-                height="200"
+                height="240"
                 image={garden}
+                className='card-img'
+
               />
               <CardContent className="card-body">
                 <Typography gutterBottom variant="h5" component="div" align="center">

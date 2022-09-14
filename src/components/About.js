@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div className='about' id='about'>
             <div className='container'>
-            <Avatar
+            <Avatar className='avatar'
  src={Akshata} alt='Akshata Kumbhar'
   sx={{ width: 456, height: 456 }}
 />

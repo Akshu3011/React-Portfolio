@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 import React from 'react'
 import './Hero.css'
 
@@ -9,7 +10,9 @@ const Hero = () => {
                 <p>My name is</p>
                 <p>Akshata Kumbhar</p>
                 <p>I am a Full stack Developer</p>
-                <button href='/' className='button'>View Portfolio</button>
+                <Link to='about' spy={true} smooth={true} offset={-100} duration={500}>
+                <button  className='button'>View Portfolio</button>
+                </Link>
             </div>
         </div>
     )
