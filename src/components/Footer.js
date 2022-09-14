@@ -46,6 +46,7 @@ const Footer = () => {
                 <div className='bottom'>
                 <Stack  direction="row" spacing={2} justifyContent="center"
   alignItems="center">
+    
                  <Link href="#" onClick = {() => openInNewTab("https://github.com/Akshu3011")}>
                 <h1><GitHubIcon/></h1>
                 </Link>

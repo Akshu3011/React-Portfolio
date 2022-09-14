@@ -37,7 +37,7 @@ const Contact = () => {
             ref={form}
             onSubmit={sendEmail}
             sx={{
-              "& .MuiTextField-root": { m: 1 }, '& .MuiTextField-root': { m: 1, width: '25ch' },
+               '& .MuiTextField-root': { m: 1, width: '25ch' },
               
             }}
             noValidate

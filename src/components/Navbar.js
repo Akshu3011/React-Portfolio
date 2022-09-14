@@ -2,17 +2,25 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from './images/logo.png'
 import {Link} from 'react-scroll'
+import { saveAs } from "file-saver";
 
 
 import './Navbar.css'
 
 const Navbar = () => {
 
+
+   
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
 
     const closeMenu = () => setClick(false)
-
+    const saveFile = () => {
+        saveAs(
+          "https://drive.google.com/file/d/1mJEaszq3-nD2KY6_6Jmf5yt8YyeNdaVJ/view?usp=sharing",
+          "Akshata Kumbhar_Resume.pdf"
+        );
+      };
     return (
         <div className='header'>
             <nav className='navbar'>
@@ -37,7 +45,9 @@ const Navbar = () => {
                     <li className='nav-item'>
                     <Link  to="experience" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Experience</Link>
                     </li>
-                   
+                    <li className='nav-item'>
+                    <Link href="" onClick={saveFile}>Resume</Link>
+                </li>
                     <li className='nav-item'>
                     <Link  to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact</Link>
                     </li>

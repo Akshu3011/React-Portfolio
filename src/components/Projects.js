@@ -50,7 +50,7 @@ const Projects = () => {
             <Card className="card" sx={{ maxWidth: 350 }}>
               <CardMedia
                 component="img"
-                alt="green iguana"
+                alt="Sarapp"
                 height="240"
                 image={sarapp}
                 className='card-img'
@@ -79,7 +79,7 @@ const Projects = () => {
             <Card className="card" sx={{ maxWidth: 350 }}>
               <CardMedia
                 component="img"
-                alt="green iguana"
+                alt="Peas By Spring"
                 height="240"
                 image={garden}
                 className='card-img'
