@@ -1,6 +1,16 @@
 import React from 'react'
 import './Footer.css'
 import {Link} from 'react-scroll'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+import Stack from '@mui/material/Stack';
+
+
+export const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  };
 
 const Footer = () => {
     return (
@@ -25,8 +35,21 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className='bottom'>
+                <Stack  direction="row" spacing={2} justifyContent="center"
+  alignItems="center">
+                 <Link href="#" onClick = {() => openInNewTab("https://github.com/Akshu3011")}>
+                <h1><GitHubIcon/></h1>
+                </Link>
+                <Link href="#" onClick = {() => openInNewTab("https://www.linkedin.com/in/akshata-kumbhar/")}>
+                <h1><LinkedInIcon/></h1>
+                </Link>
+                <Link href="#" onClick = {() => openInNewTab("https://github.com/Akshu3011")}>
+                <h1><EmailIcon/></h1>
+                </Link>
+                </Stack>
                     <span className='line'></span>
-                    <p>&copy;2022 by Akshata Kumbhar</p>
+                  
+                    <h5>&copy;2022 by Akshata Kumbhar</h5>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ const Hero = () => {
                 <p>My name is</p>
                 <p>Akshata Kumbhar</p>
                 <p>I am a Full stack Developer</p>
-                <Link to='about' spy={true} smooth={true} offset={-100} duration={500}>
+                <Link to='about' spy={true} smooth={true} offset={0} duration={500}>
                 <button  className='button'>View Portfolio</button>
                 </Link>
             </div>

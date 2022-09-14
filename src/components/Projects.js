@@ -83,7 +83,7 @@ const Projects = () => {
                 height="240"
                 image={garden}
                 className='card-img'
-
+                
               />
               <CardContent className="card-body">
                 <Typography gutterBottom variant="h5" component="div" align="center">
