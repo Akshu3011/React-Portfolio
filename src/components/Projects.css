@@ -26,7 +26,6 @@ box-shadow: 5px 10px 15px 20px rgba(0,0,0,0.253)!important;
 
 .card-body{
     padding: 3rem 0 !important;
-    background-color: aliceblue;
     
     
 }
@@ -37,7 +36,6 @@ box-shadow: 5px 10px 15px 20px rgba(0,0,0,0.253)!important;
 }
 .card{
     overflow: hidden;
-    background-color: aliceblue !important;
    
 
 }

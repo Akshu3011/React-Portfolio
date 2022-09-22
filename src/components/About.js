@@ -28,7 +28,7 @@ const About = () => {
             thinker, and innovative creator to develop software that is
             customized to meet a company's organizational needs, highlight its
             core competencies, and further success. Recently I have completed
-            the Full-Stack Developement Bootcamp from University pf Washington.
+            the Full-Stack Developement Bootcamp from University of Washington.
           </p>
           <p>I am Akshata Kumbhar, residing in Seattle, WA</p>
           <Link
