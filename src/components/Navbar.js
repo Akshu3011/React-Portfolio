@@ -17,7 +17,7 @@ const Navbar = () => {
     const closeMenu = () => setClick(false)
     const saveFile = () => {
         saveAs(
-          "https://drive.google.com/file/d/1ebqH9u4qvzbSmYZByCaoroDD8bOIuv-e/view?usp=sharing",
+          "https://drive.google.com/file/d/1K0fYlzSYQbpHhXFFxnRyL-gRoVlSWOWm/view?usp=sharing",
           "Akshata Kumbhar_Resume.pdf"
         );
       };
